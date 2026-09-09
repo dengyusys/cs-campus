@@ -31,6 +31,8 @@ html, body,
   color: var(--text-color);
 }
 
+/* v5 把背景设在 html 上、body 仅一屏高：两层都染，避免滚动后露出白底 */
+html,
 body {
   background: var(--background);
 }
