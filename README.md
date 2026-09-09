@@ -1,6 +1,6 @@
 # cs-campus
 
-校园计算机科学学习项目集合。当前包含：**Java 入门教程**、**Python / Markdown / Git** 三份入门教程，以及一份**用 ZCode（AI 编程代理）创建学习教程的方法手册**。
+校园计算机科学学习项目集合。当前包含：**Java 入门教程**、**Python / Markdown / Git / MySQL** 四份入门教程，以及一份**用 ZCode（AI 编程代理）创建学习教程的方法手册**。
 
 ## 📚 Java 入门：从语法到完整项目
 
@@ -16,6 +16,10 @@
 - **[Git 入门：拉取、推送与合并](docs/git/README.md)**（约 1.5 小时）—— 版本控制工具：四个区域模型、`push` / `pull` / `merge` 三件套、冲突解决五步法，含本地模拟两人协作的练习。建议在 Java 计划 Day 9 前后完成
 - **[Python 入门：快速上手与实践](docs/python/README.md)**（约 2 小时）—— 另一门主流语言的最小集入门：变量、流程控制、数据结构四件套、函数、文件读写；练习题复刻 Java 计划经典题目，同题异构对比两门语言
 - **[Markdown 入门：写作即排版](docs/markdown/README.md)**（约 1 小时）—— 程序员的通用写作格式：标题、列表、表格、代码块、mermaid 图表与折叠块；练习包括把费曼卡片排版成 Markdown、写自我介绍 README
+
+### 🗄️ 进阶：MySQL
+
+**[MySQL 入门：从 SQL 到 JDBC](docs/mysql/README.md)**（约 2.5 小时）—— Java 进阶路线第一站：SQL 建表与增删改查、`WHERE`/`ORDER BY`/`LIKE`/`AVG`、`JOIN` 多表关联、JDBC 五步走，并动手把学生管理系统从文件持久化迁移到数据库。
 
 ### 🤖 元技能：用 ZCode 创建教程
 
@@ -121,6 +125,7 @@ cs-campus/
 │   ├── git/             # Git 入门教程（拉取/推送/合并）
 │   ├── python/          # Python 入门教程
 │   ├── markdown/        # Markdown 入门教程
+│   ├── mysql/           # MySQL 入门教程（SQL + JDBC）
 │   └── zcode/           # 用 ZCode 创建教程的方法手册
 ├── AGENTS.md            # AI 协作规范（给编码代理的仓库约定）
 └── README.md

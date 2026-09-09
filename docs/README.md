@@ -109,4 +109,6 @@ python -m http.server 3000 --directory docs --bind 127.0.0.1
 
 **🤖 元技能**：[用 ZCode 创建入门教程](zcode/README.md) —— 本站全部内容是怎么用 AI 定制出来的？复盘真实过程，提炼成可复用的流程和提示词模板，下次想学任何新东西都可以照着做。
 
+**🗄️ 进阶**：[MySQL 入门：从 SQL 到 JDBC](mysql/README.md) —— Java 进阶路线（MySQL + JDBC → Spring Boot）的第一站：SQL 增删改查建表、JDBC 五步走，并把学生管理系统的数据从文件迁移进数据库。
+
 准备好了？进入 [Day 0 · 环境搭建](java/day00-环境搭建.md) 🚀
