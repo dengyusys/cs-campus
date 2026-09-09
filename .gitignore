@@ -1,0 +1,33 @@
+# ---- Java ----
+*.class
+*.jar
+*.log
+hs_err_pid*
+
+# IntelliJ IDEA
+.idea/
+*.iml
+out/
+
+# Eclipse
+.classpath
+.project
+.settings/
+
+# Maven / Gradle
+target/
+build/
+.gradle/
+
+# VS Code
+.vscode/
+
+# ---- OS ----
+.DS_Store
+Thumbs.db
+
+# ---- Node（如后续用到 npx serve 等）----
+node_modules/
+
+# ---- ZCode 会话产物 ----
+.zcode/
