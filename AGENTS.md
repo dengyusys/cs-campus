@@ -32,7 +32,7 @@ python -m http.server 3000 --directory docs --bind 127.0.0.1
 
 ### 站点主题（docsify v5）
 
-- 站点基于 **docsify v5**：主题分层加载 `dist/themes/core.min.css`（基座）→ `dist/themes/addons/vue.min.css`（vue 变体）→ `docs/theme-claude.css`（Claude 风格覆盖层，默认启用）
+- 站点基于 **docsify v5**：主题分层加载 `dist/themes/core.min.css`（基座）→ `dist/themes/addons/vue.min.css`（vue 变体）→ `docs/copy-code.css`（与主题无关的插件修正，两套主题都加载）→ `docs/theme-claude.css`（Claude 风格覆盖层，默认启用）
 - 两套主题：**vue**（前两层）与 **Claude**（三层全开）；右上角按钮切换，选择存于 `localStorage` 的 `cs-theme` 键（`claude` / `vue`），`index.html` head 内联脚本在首屏前禁用覆盖层以防止闪烁
 - 切换按钮基础样式内联在 `index.html`，Claude 形态写在 `theme-claude.css`
 - 侧边栏手柄是 v5 原生造型（全高热区 + 内嵌竖条）；`<body class="sidebar-toggle-hamburger">` 启用汉堡图标变体；Claude 配色通过 `theme-claude.css` 里的 `--sidebar-toggle-*` 变量驱动

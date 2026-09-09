@@ -136,12 +136,7 @@ body {
 }
 
 /* ---------- 6. 辅助组件 ---------- */
-/* 代码复制按钮（docsify-copy-code 插件）柔和化 */
-.copy-code-button {
-  background: #e8e4da !important;
-  color: #4a463e !important;
-  border-radius: 6px !important;
-}
+/* 代码复制按钮的配色修正在独立的 copy-code.css（vue / claude 两主题通用） */
 
 /* 主题切换按钮（Claude 主题形态，基础样式见 index.html 内联） */
 #theme-toggle {

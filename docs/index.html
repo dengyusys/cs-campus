@@ -8,6 +8,8 @@
   <!-- docsify v5 主题分层：core 基座（必选）+ vue 变体叠加；claude 风格为最后一层覆盖 -->
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@5/dist/themes/core.min.css">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@5/dist/themes/addons/vue.min.css">
+  <!-- 与主题无关的插件样式修正（复制按钮配色），两套主题都加载 -->
+  <link rel="stylesheet" href="copy-code.css">
   <link rel="stylesheet" href="theme-claude.css" id="claude-css">
   <script>
     // 主题持久化：默认 Claude 风格；用户选过 vue 则在首屏渲染前禁用覆盖层（防闪烁）

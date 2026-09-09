@@ -1,0 +1,24 @@
+/* ==========================================================================
+   代码复制按钮的通用配色修正（docsify-copy-code@3）
+   问题：插件默认用 var(--theme-color) 做底色，文字又被 core 的行内代码配色
+   染成 #e96900，导致橙底橙字看不清；vue / claude 两套主题都受影响。
+   方案：仅覆盖底色与文字色，其余（尺寸/定位/提示行为）全部保持插件原生。
+   本文件与主题无关，在 index.html 中两套主题下都会加载。
+   ========================================================================== */
+
+.markdown-section .docsify-copy-code-button {
+  background: rgba(0, 0, 0, 0.55);
+  color: #ffffff;
+}
+
+/* 插件给按钮内的 span 设了 background: inherit——半透明底色下会叠出深浅两层背景，
+   置为透明让按钮自身只画一层 */
+.markdown-section .docsify-copy-code-button > span {
+  background: transparent;
+}
+
+/* 复制成功的 "Copied" 气泡飘在按钮左侧的浅色代码区上，白字会看不清，单独用深色 */
+.markdown-section .docsify-copy-code-button > .success,
+.markdown-section .docsify-copy-code-button > .error {
+  color: #4a463e;
+}
