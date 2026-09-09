@@ -1,0 +1,159 @@
+/* ==========================================================================
+   cs-campus 学习站 · Claude 官网风格主题（docsify v5）
+   暖米白底 · 近黑文字 · Claude 橙棕强调色 · 衬线标题 · 圆角柔和 · 大量留白
+   加载顺序：core.min.css → addons/vue.min.css → 本文件（最后一层覆盖）
+   ========================================================================== */
+
+/* ---------- 1. 设计令牌 ---------- */
+:root {
+  /* 品牌色：Claude 官网的橙棕（D97757） */
+  --theme-color: #d97757;
+  /* 背景：暖米白（Claude 官网的 #FAF9F5 家族） */
+  --background: #faf9f5;
+  /* 文字：暖调近黑 */
+  --heading-color: #2b2a27;
+  --text-color: #3d3a34;
+
+  /* 侧边栏 */
+  --sidebar-background: #f4f2ec;
+  --sidebar-border-color: #e8e4da;
+
+  /* docsify v5 原生侧边栏手柄的暖色适配（变量驱动，无需选择器覆盖） */
+  --sidebar-toggle-bg: #e8e4da;
+  --sidebar-toggle-bg-hover: var(--theme-color);
+  --sidebar-toggle-color: #8a8375;
+  --sidebar-toggle-color-hover: #ffffff;
+}
+
+html, body,
+.markdown-section,
+.markdown-section p {
+  color: var(--text-color);
+}
+
+body {
+  background: var(--background);
+}
+
+/* ---------- 2. 标题：衬线，庄重有书卷气 ---------- */
+.markdown-section h1,
+.markdown-section h2,
+.markdown-section h3,
+.markdown-section h4,
+.sidebar .sidebar-nav li > a,
+.sidebar h1,
+.sidebar h1 a {
+  font-family: Georgia, "Times New Roman", "Songti SC", "SimSun", serif;
+}
+
+.markdown-section h1 {
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.markdown-section h1,
+.markdown-section h2 {
+  color: var(--heading-color);
+}
+
+/* ---------- 3. 侧边栏：暖底 ---------- */
+.sidebar {
+  background: var(--sidebar-background);
+  border-right: 1px solid var(--sidebar-border-color);
+}
+
+.sidebar .app-name, .sidebar .app-name a {
+  color: var(--heading-color);
+  font-weight: 600;
+}
+
+.sidebar li > a {
+  color: #4a463e;
+}
+.sidebar li > a:hover {
+  color: var(--theme-color);
+}
+
+/* ---------- 4. 正文版式：舒适线高 + 柔和圆角 ---------- */
+.markdown-section {
+  line-height: 1.78;
+  font-size: 16.5px;
+}
+
+/* 引用块：Claude 官网的暖色 blockquote */
+.markdown-section blockquote {
+  border-left: 3px solid var(--theme-color);
+  background: #fbf7f0;
+  color: #5c5548;
+  border-radius: 0 8px 8px 0;
+  padding: 0.6em 1em;
+}
+
+/* 代码块：暖米底 */
+.markdown-section pre {
+  background: #f4f1ea;
+  border-radius: 12px;
+  border: 1px solid #eee6da;
+  padding: 1em 1.2em;
+}
+.markdown-section code {
+  font-family: "JetBrains Mono", "Cascadia Code", Consolas, monospace;
+  border-radius: 6px;
+  color: #b04e3a;
+  background: #f4f1ea;
+}
+.markdown-section pre code {
+  color: #2b2a27;
+  background: transparent;
+}
+
+/* 表格：减淡边框、圆角 */
+.markdown-section table {
+  border-collapse: collapse;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.markdown-section th {
+  background: #f4f2ec;
+  border-bottom: 2px solid #e8e4da;
+}
+.markdown-section td {
+  border-bottom: 1px solid #ece7dc;
+}
+
+/* ---------- 5. 链接 ---------- */
+.markdown-section a {
+  color: var(--theme-color);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: color 0.15s ease;
+}
+.markdown-section a:hover {
+  color: #b04e3a;
+  border-bottom-color: currentColor;
+}
+
+/* ---------- 6. 辅助组件 ---------- */
+/* 代码复制按钮（docsify-copy-code 插件）柔和化 */
+.copy-code-button {
+  background: #e8e4da !important;
+  color: #4a463e !important;
+  border-radius: 6px !important;
+}
+
+/* 主题切换按钮（Claude 主题形态，基础样式见 index.html 内联） */
+#theme-toggle {
+  background: rgba(250, 249, 245, 0.9);
+  border-color: #e8e4da;
+  color: #4a463e;
+}
+#theme-toggle:hover {
+  border-color: var(--theme-color);
+  color: #b04e3a;
+}
+
+/* ---------- 7. 滚动条：柔和 ---------- */
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-thumb { background: #d9d3c4; border-radius: 20px; }
+::-webkit-scrollbar-thumb:hover { background: #c7c0ae; }
+::-webkit-scrollbar-track { background: transparent; }

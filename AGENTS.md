@@ -30,6 +30,15 @@ python -m http.server 3000 --directory docs --bind 127.0.0.1
 - 新增一个主题目录时：根侧边栏加一行入口；若内容超过 ~10 篇，为该目录建自己的 `_sidebar.md`，并在顶部放「🏠 返回首页」链接
 - 子侧边栏内的链接用站点根绝对路径（如 `/java/day01-xxx.md`），避免相对路径歧义
 
+### 站点主题（docsify v5）
+
+- 站点基于 **docsify v5**：主题分层加载 `dist/themes/core.min.css`（基座）→ `dist/themes/addons/vue.min.css`（vue 变体）→ `docs/theme-claude.css`（Claude 风格覆盖层，默认启用）
+- 两套主题：**vue**（前两层）与 **Claude**（三层全开）；右上角按钮切换，选择存于 `localStorage` 的 `cs-theme` 键（`claude` / `vue`），`index.html` head 内联脚本在首屏前禁用覆盖层以防止闪烁
+- 切换按钮基础样式内联在 `index.html`，Claude 形态写在 `theme-claude.css`
+- 侧边栏手柄是 v5 原生造型（全高热区 + 内嵌竖条）；`<body class="sidebar-toggle-hamburger">` 启用汉堡图标变体；Claude 配色通过 `theme-claude.css` 里的 `--sidebar-toggle-*` 变量驱动
+- **插件包名注意**：代码复制插件是 `docsify-copy-code`（带连字符，v4 时代误写成 `docsify-copycode` 导致长期 404 未生效）；mermaid 用 mermaid@10 + docsify-mermaid@2（v5 下实测兼容）
+- 修改 `theme-claude.css` 只影响 Claude 主题；适配 v5 样式时优先用官方 CSS 变量，其次才是选择器覆盖
+
 ### 内容模板（保持一致性）
 
 每日文档固定五段式，emoji 板块标题不要改：
@@ -89,8 +98,9 @@ python -m http.server 3000 --directory docs --bind 127.0.0.1
 
 1. 所在分区的侧边栏能看到新/改的文档且能打开（Java 文档看 `docs/java/_sidebar.md`，其余页面看根侧边栏；改过侧边栏或 `index.html` 后用 Ctrl+F5 强制刷新，避免旧缓存）
 2. 页内 mermaid 图渲染为图形，无 Syntax error、无源码泄漏
-3. 首页搜索能命中新内容
-4. 文内链接（上一天/下一天、跨教程引用）不断链；跨目录引用一律用站点根绝对路径（如 `/java/day01-xxx.md`）
+3. 文内链接（上一天/下一天、跨教程引用）不断链；跨目录引用一律用站点根绝对路径（如 `/java/day01-xxx.md`）
+
+> 注：本站未启用全文搜索插件，验证以侧边栏导航和链接为主。
 
 ## 未来可能的扩展方向（做之前和用户确认）
 

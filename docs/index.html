@@ -2,34 +2,69 @@
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
-  <title>Java 零基础 14 天速成</title>
+  <title>cs-campus 学习站</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+  <!-- docsify v5 主题分层：core 基座（必选）+ vue 变体叠加；claude 风格为最后一层覆盖 -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@5/dist/themes/core.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@5/dist/themes/addons/vue.min.css">
+  <link rel="stylesheet" href="theme-claude.css" id="claude-css">
+  <script>
+    // 主题持久化：默认 Claude 风格；用户选过 vue 则在首屏渲染前禁用覆盖层（防闪烁）
+    if (localStorage.getItem('cs-theme') === 'vue') {
+      document.getElementById('claude-css').disabled = true;
+    }
+  </script>
+  <style>
+    /* 主题切换按钮：基础样式内联，保证在 vue / claude 两套主题下都可用 */
+    #theme-toggle {
+      position: fixed; top: 14px; right: 16px; z-index: 999;
+      padding: 6px 14px; border-radius: 20px;
+      border: 1px solid rgba(0, 0, 0, 0.14);
+      background: rgba(255, 255, 255, 0.88);
+      color: #333; font-size: 13px; cursor: pointer;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+    }
+    #theme-toggle:hover { border-color: rgba(0, 0, 0, 0.3); }
+  </style>
 </head>
-<body>
+<!-- sidebar-toggle-hamburger：启用 v5 原生 toggle 的汉堡图标变体（默认为三圆点 kebab） -->
+<body class="sidebar-toggle-hamburger">
   <div id="app">正在加载文档站…</div>
+
+  <button id="theme-toggle" title="切换主题">🍊 Claude</button>
+  <script>
+    (function () {
+      var KEY = 'cs-theme';
+      var btn = document.getElementById('theme-toggle');
+      var link = document.getElementById('claude-css');
+      function apply(t) {
+        link.disabled = (t === 'vue');
+        btn.textContent = (t === 'claude') ? '🍊 Claude' : '🌿 Vue';
+      }
+      apply(localStorage.getItem(KEY) === 'vue' ? 'vue' : 'claude');
+      btn.addEventListener('click', function () {
+        var next = (localStorage.getItem(KEY) === 'vue') ? 'claude' : 'vue';
+        localStorage.setItem(KEY, next);
+        apply(next);
+      });
+    })();
+  </script>
 
   <script>
     window.$docsify = {
       name: '📚 cs-campus 学习站',
       loadSidebar: true,
       subMaxLevel: 1,
-      auto2top: true,
-      search: {
-        placeholder: '搜索文档',
-        noData: '未找到结果',
-        depth: 3
-      }
+      auto2top: true
     };
   </script>
 
-  <!-- docsify 核心 -->
-  <script src="//cdn.jsdelivr.net/npm/docsify@4/lib/docsify.min.js"></script>
-  <!-- 全文搜索插件 -->
-  <script src="//cdn.jsdelivr.net/npm/docsify@4/lib/plugins/search.min.js"></script>
-  <!-- 代码一键复制插件 -->
-  <script src="//cdn.jsdelivr.net/npm/docsify-copycode@2/dist/docsify-copycode.min.js"></script>
+  <!-- docsify 核心 v5 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify@5/dist/docsify.min.js"></script>
+
+  <!-- 代码一键复制插件（注意包名是 docsify-copy-code，带连字符） -->
+  <script src="//cdn.jsdelivr.net/npm/docsify-copy-code@3/dist/docsify-copy-code.min.js"></script>
   <!-- 语法高亮支持：Java / Python / Bash / SQL -->
   <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-java.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-python.min.js"></script>
