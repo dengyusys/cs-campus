@@ -8,3 +8,6 @@
   * [Git 入门：拉取、推送与合并](git/README.md)
   * [Python 入门：快速上手与实践](python/README.md)
   * [Markdown 入门：写作即排版](markdown/README.md)
+
+* **🤖 元技能**
+  * [用 ZCode 创建入门教程：从想法到上线](zcode/README.md)

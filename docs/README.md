@@ -107,4 +107,6 @@ python -m http.server 3000 --directory docs --bind 127.0.0.1
 - **[Python 入门：快速上手与实践](python/README.md)**（约 2 小时）—— 另一门必备语言的最小集入门，练习题复刻 Java 计划经典题目（BMI、猜数字、单词计数），同题异构对比两门语言
 - **[Markdown 入门：写作即排版](markdown/README.md)**（约 1 小时）—— 程序员的通用写作格式：本站文档和你的费曼卡片都是 Markdown，学完即可给本站贡献文档
 
+**🤖 元技能**：[用 ZCode 创建入门教程](zcode/README.md) —— 本站全部内容是怎么用 AI 定制出来的？复盘真实过程，提炼成可复用的流程和提示词模板，下次想学任何新东西都可以照着做。
+
 准备好了？进入 [Day 0 · 环境搭建](java/day00-环境搭建.md) 🚀

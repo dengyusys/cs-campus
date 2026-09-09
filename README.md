@@ -1,6 +1,6 @@
 # cs-campus
 
-校园计算机科学学习项目集合。当前包含：**Java 零基础 14 天速成学习计划**，以及 **Python / Markdown / Git** 三份入门教程。
+校园计算机科学学习项目集合。当前包含：**Java 零基础 14 天速成学习计划**、**Python / Markdown / Git** 三份入门教程，以及一份**用 ZCode（AI 编程代理）创建学习教程的方法手册**。
 
 ## 📚 Java 零基础 14 天速成
 
@@ -16,6 +16,10 @@
 - **[Git 入门：拉取、推送与合并](docs/git/README.md)**（约 1.5 小时）—— 版本控制工具：四个区域模型、`push` / `pull` / `merge` 三件套、冲突解决五步法，含本地模拟两人协作的练习。建议在 Java 计划 Day 9 前后完成
 - **[Python 入门：快速上手与实践](docs/python/README.md)**（约 2 小时）—— 另一门主流语言的最小集入门：变量、流程控制、数据结构四件套、函数、文件读写；练习题复刻 Java 计划经典题目，同题异构对比两门语言
 - **[Markdown 入门：写作即排版](docs/markdown/README.md)**（约 1 小时）—— 程序员的通用写作格式：标题、列表、表格、代码块、mermaid 图表与折叠块；练习包括把费曼卡片排版成 Markdown、写自我介绍 README
+
+### 🤖 元技能：用 ZCode 创建教程
+
+**[用 ZCode 创建入门教程：从想法到上线](docs/zcode/README.md)**（约 40 分钟）—— 复盘本站的真实创建过程，提炼「让 AI 为你定制学习教程」的完整流程：需求一句话模板、三个关键决策、审计划要点、验收清单、迭代提示词，以及用 AGENTS.md 沉淀长期约定。
 
 ## 🚀 快速开始
 
@@ -100,6 +104,7 @@ python -m http.server 3000 --directory docs
 | 页面空白/一直「正在加载」 | 首次打开需联网加载 CDN 上的 JS；确认网络后刷新 |
 | 端口被占用 | 换个端口：`python -m http.server 3001 --directory docs --bind 127.0.0.1` |
 | 终端打印 `Serving HTTP on :: port 3000` | 正常现象：`::` 表示「监听本机所有网卡」，不是可访问的网址；浏览器访问 `http://127.0.0.1:3000` 即可。想让它打印得直观，就按上方命令加上 `--bind 127.0.0.1` |
+| 改了文档或侧边栏，页面看起来没变 | 浏览器缓存了旧的 Markdown 文件：按 `Ctrl + F5` 强制刷新；仍不行就重启本地服务 |
 | 窄窗口下侧边栏不见了 | docsify 响应式设计，点击左下角 ☰ 按钮展开，或把窗口拉宽 |
 | 不想起服务，能看吗 | 可以：GitHub 上直接浏览 `docs/java/` 下的 md 文件（GitHub 原生渲染 mermaid）；或用 VS Code 打开 |
 | 学到一半电脑换了 | 进度在文档里勾选的状态不会跨设备保存，用自己笔记里的教学卡片续接即可 |
@@ -115,7 +120,8 @@ cs-campus/
 │   ├── java/            # Java 计划 Day 0 ~ Day 14 每日文档（含自己的 _sidebar.md）
 │   ├── git/             # Git 入门教程（拉取/推送/合并）
 │   ├── python/          # Python 入门教程
-│   └── markdown/        # Markdown 入门教程
+│   ├── markdown/        # Markdown 入门教程
+│   └── zcode/           # 用 ZCode 创建教程的方法手册
 ├── AGENTS.md            # AI 协作规范（给编码代理的仓库约定）
 └── README.md
 ```
