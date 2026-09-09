@@ -14,6 +14,7 @@
   * [Linux 入门：与命令行做朋友](linux/README.md)
   * [Redis 入门：把数据放进内存](redis/README.md)
   * [HTTP / REST 入门](http/README.md)
+  * [MyBatis 入门](mybatis/README.md)
 
 * **🤖 元技能**
   * [用 ZCode 创建入门教程：从想法到上线](zcode/README.md)

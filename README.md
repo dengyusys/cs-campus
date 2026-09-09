@@ -1,6 +1,6 @@
 # cs-campus
 
-校园计算机科学学习项目集合。当前包含：**Java 入门教程**、**Python / Markdown / Git / MySQL / Linux / Redis / HTTP** 七份入门教程，以及一份**用 ZCode（AI 编程代理）创建学习教程的方法手册**。
+校园计算机科学学习项目集合。当前包含：**Java 入门教程**、**Python / Markdown / Git / MySQL / Linux / Redis / HTTP / MyBatis** 八份入门教程，以及一份**用 ZCode（AI 编程代理）创建学习教程的方法手册**。
 
 ## 📚 Java 入门：从语法到完整项目
 
@@ -32,6 +32,10 @@
 ### 🌐 HTTP / REST 入门
 
 **[HTTP / REST 入门](docs/http/README.md)**（约 2 小时）—— Web 世界的语言：请求方法、状态码含义、RESTful 资源接口设计、JSON 数据传输，为把学生管理系统升级成 Web 应用打基础。
+
+### 📝 MyBatis 入门
+
+**[MyBatis 入门](docs/mybatis/README.md)**（约 2 小时）—— Java 持久层框架：Mapper 接口 + XML 分离 SQL、`#{}` 参数占位防注入、自动映射与动态 SQL，把 MySQL 教程的 JDBC 代码升级成 MyBatis。
 
 ### 🤖 元技能：用 ZCode 创建教程
 
@@ -141,6 +145,7 @@ cs-campus/
 │   ├── linux/           # Linux 入门教程（命令行）
 │   ├── redis/           # Redis 入门教程（内存数据库）
 │   ├── http/            # HTTP / REST 入门教程
+│   ├── mybatis/         # MyBatis 入门教程（持久层框架）
 │   └── zcode/           # 用 ZCode 创建教程的方法手册
 ├── AGENTS.md            # AI 协作规范（给编码代理的仓库约定）
 └── README.md
