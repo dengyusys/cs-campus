@@ -112,8 +112,8 @@ cs-campus/
 ├── docs/                # 学习计划文档站（Docsify）
 │   ├── index.html       # 站点入口（CDN 加载 docsify + mermaid）
 │   ├── README.md        # 计划总览（站点首页）
-│   ├── _sidebar.md      # 侧边栏导航（新增文档须同步更新）
-│   ├── java/            # Day 0 ~ Day 14 每日文档
+│   ├── _sidebar.md      # 根侧边栏（门户式：只放各主题入口）
+│   ├── java/            # Java 计划 Day 0 ~ Day 14 每日文档（含自己的 _sidebar.md）
 │   ├── git/             # Git 入门教程（拉取/推送/合并）
 │   ├── python/          # Python 入门教程
 │   └── markdown/        # Markdown 入门教程
