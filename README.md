@@ -1,6 +1,6 @@
 # cs-campus
 
-校园计算机科学学习项目集合。当前包含：**Java 零基础 14 天速成学习计划**、**Python 入门教程** 与 **Git 入门教程**。
+校园计算机科学学习项目集合。当前包含：**Java 零基础 14 天速成学习计划**，以及 **Python / Markdown / Git** 三份入门教程。
 
 ## 📚 Java 零基础 14 天速成
 
@@ -15,6 +15,7 @@
 
 - **[Git 入门：拉取、推送与合并](docs/git/README.md)**（约 1.5 小时）—— 版本控制工具：四个区域模型、`push` / `pull` / `merge` 三件套、冲突解决五步法，含本地模拟两人协作的练习。建议在 Java 计划 Day 9 前后完成
 - **[Python 入门：快速上手与实践](docs/python/README.md)**（约 2 小时）—— 另一门主流语言的最小集入门：变量、流程控制、数据结构四件套、函数、文件读写；练习题复刻 Java 计划经典题目，同题异构对比两门语言
+- **[Markdown 入门：写作即排版](docs/markdown/README.md)**（约 1 小时）—— 程序员的通用写作格式：标题、列表、表格、代码块、mermaid 图表与折叠块；练习包括把费曼卡片排版成 Markdown、写自我介绍 README
 
 ## 🚀 快速开始
 
@@ -114,7 +115,8 @@ cs-campus/
 │   ├── _sidebar.md      # 侧边栏导航（新增文档须同步更新）
 │   ├── java/            # Day 0 ~ Day 14 每日文档
 │   ├── git/             # Git 入门教程（拉取/推送/合并）
-│   └── python/          # Python 入门教程
+│   ├── python/          # Python 入门教程
+│   └── markdown/        # Markdown 入门教程
 ├── AGENTS.md            # AI 协作规范（给编码代理的仓库约定）
 └── README.md
 ```
