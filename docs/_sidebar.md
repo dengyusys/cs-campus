@@ -21,3 +21,6 @@
 
 * **延伸 · 工具课**
   * [Git 入门：拉取、推送与合并](git/README.md)
+
+* **延伸 · 语言课**
+  * [Python 入门：快速上手与实践](python/README.md)
