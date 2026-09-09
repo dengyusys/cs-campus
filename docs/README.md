@@ -113,4 +113,6 @@ python -m http.server 3000 --directory docs --bind 127.0.0.1
 
 **💻 Linux 入门：与命令行做朋友**（[linux/README.md](linux/README.md)）—— 服务器世界的语言：导航、文件、搜索、权限、进程等高频命令，配合 WSL 亲手练一遍。
 
+**⚡ Redis 入门：把数据放进内存**（[redis/README.md](redis/README.md)）—— 内存数据库：五种数据结构、缓存旁路（Cache-Aside）、过期时间，并给学生管理系统加速。
+
 准备好了？进入 [Day 0 · 环境搭建](java/day00-环境搭建.md) 🚀
