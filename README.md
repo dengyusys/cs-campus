@@ -35,7 +35,7 @@ git clone <仓库地址>
 cd cs-campus
 
 # 2. 起本地文档服务（三种方式任选其一）
-python -m http.server 3000 --directory docs   # 方式一：Python
+python -m http.server 3000 --directory docs --bind 127.0.0.1   # 方式一：Python
 npx serve docs -p 3000                        # 方式二：Node.js
 # 方式三：VS Code 装 Live Server 插件，右键 docs/index.html → Open with Live Server
 
@@ -97,7 +97,8 @@ python -m http.server 3000 --directory docs
 | 问题 | 解决办法 |
 |---|---|
 | 页面空白/一直「正在加载」 | 首次打开需联网加载 CDN 上的 JS；确认网络后刷新 |
-| 端口被占用 | 换个端口：`python -m http.server 3001 --directory docs` |
+| 端口被占用 | 换个端口：`python -m http.server 3001 --directory docs --bind 127.0.0.1` |
+| 终端打印 `Serving HTTP on :: port 3000` | 正常现象：`::` 表示「监听本机所有网卡」，不是可访问的网址；浏览器访问 `http://127.0.0.1:3000` 即可。想让它打印得直观，就按上方命令加上 `--bind 127.0.0.1` |
 | 窄窗口下侧边栏不见了 | docsify 响应式设计，点击左下角 ☰ 按钮展开，或把窗口拉宽 |
 | 不想起服务，能看吗 | 可以：GitHub 上直接浏览 `docs/java/` 下的 md 文件（GitHub 原生渲染 mermaid）；或用 VS Code 打开 |
 | 学到一半电脑换了 | 进度在文档里勾选的状态不会跨设备保存，用自己笔记里的教学卡片续接即可 |

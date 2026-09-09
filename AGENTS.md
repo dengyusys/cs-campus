@@ -9,8 +9,8 @@
 ## 常用命令
 
 ```bash
-# 起本地文档服务（改完文档必须用它验证）
-python -m http.server 3000 --directory docs
+# 起本地文档服务（改完文档必须用它验证；--bind 127.0.0.1 让输出直观且只监听本机）
+python -m http.server 3000 --directory docs --bind 127.0.0.1
 
 # Node.js 环境的等价方式
 npx serve docs -p 3000
