@@ -115,4 +115,6 @@ python -m http.server 3000 --directory docs --bind 127.0.0.1
 
 **⚡ Redis 入门：把数据放进内存**（[redis/README.md](redis/README.md)）—— 内存数据库：五种数据结构、缓存旁路（Cache-Aside）、过期时间，并给学生管理系统加速。
 
+**🌐 HTTP / REST 入门**（[http/README.md](http/README.md)）—— Web 世界的语言：请求方法、状态码、REST 风格的资源接口，为把学生管理系统搬上网打基础。
+
 准备好了？进入 [Day 0 · 环境搭建](java/day00-环境搭建.md) 🚀
