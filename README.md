@@ -24,7 +24,7 @@
 | 工具 | 用途 | 说明 |
 |---|---|---|
 | Git | 克隆仓库 | [下载](https://git-scm.com/downloads) |
-| Python 3 或 Node.js | 起本地文档服务 | 二选一即可 |
+| Python 3 | 起本地文档服务 | [下载](https://www.python.org/downloads/) |
 | 浏览器 | 阅读文档 | Chrome / Edge 均可 |
 
 > 学习 Java 本身需要 JDK 21 + IntelliJ IDEA，详见 [Day 0 · 环境搭建](docs/java/day00-环境搭建.md)。
@@ -36,10 +36,8 @@
 git clone <仓库地址>
 cd cs-campus
 
-# 2. 起本地文档服务（三种方式任选其一）
-python -m http.server 3000 --directory docs --bind 127.0.0.1   # 方式一：Python
-npx serve docs -p 3000                        # 方式二：Node.js
-# 方式三：VS Code 装 Live Server 插件，右键 docs/index.html → Open with Live Server
+# 2. 起本地文档服务（推荐用 Python；也可用 VS Code 的 Live Server 插件）
+python -m http.server 3000 --directory docs --bind 127.0.0.1
 
 # 3. 浏览器打开
 # http://127.0.0.1:3000

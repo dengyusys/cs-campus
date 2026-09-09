@@ -70,14 +70,11 @@ mindmap
 
 ## 怎么阅读本站
 
-文档源是纯 Markdown，通过 Docsify 渲染成网页。在仓库根目录任选一种方式起一个本地服务：
+文档源是纯 Markdown，通过 Docsify 渲染成网页。在仓库根目录起一个本地服务：
 
 ```bash
-# 方式一：Python（在仓库根目录执行；Windows 上也可能是 py -m http.server）
+# 在仓库根目录执行（Windows 上也可能是 py -m http.server）
 python -m http.server 3000 --directory docs --bind 127.0.0.1
-
-# 方式二：Node.js
-npx serve docs -p 3000
 ```
 
 然后浏览器打开 <http://127.0.0.1:3000> 即可（把 `docs` 目录作为站点根目录）。
