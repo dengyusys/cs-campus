@@ -111,4 +111,6 @@ python -m http.server 3000 --directory docs --bind 127.0.0.1
 
 **🗄️ 进阶**：[MySQL 入门：从 SQL 到 JDBC](mysql/README.md) —— Java 进阶路线（MySQL + JDBC → Spring Boot）的第一站：SQL 增删改查建表、JDBC 五步走，并把学生管理系统的数据从文件迁移进数据库。
 
+**💻 Linux 入门：与命令行做朋友**（[linux/README.md](linux/README.md)）—— 服务器世界的语言：导航、文件、搜索、权限、进程等高频命令，配合 WSL 亲手练一遍。
+
 准备好了？进入 [Day 0 · 环境搭建](java/day00-环境搭建.md) 🚀

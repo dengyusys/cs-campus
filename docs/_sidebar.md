@@ -11,6 +11,7 @@
 
 * **🗄️ 进阶**
   * [MySQL 入门：从 SQL 到 JDBC](mysql/README.md)
+  * [Linux 入门：与命令行做朋友](linux/README.md)
 
 * **🤖 元技能**
   * [用 ZCode 创建入门教程：从想法到上线](zcode/README.md)

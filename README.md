@@ -1,6 +1,6 @@
 # cs-campus
 
-校园计算机科学学习项目集合。当前包含：**Java 入门教程**、**Python / Markdown / Git / MySQL** 四份入门教程，以及一份**用 ZCode（AI 编程代理）创建学习教程的方法手册**。
+校园计算机科学学习项目集合。当前包含：**Java 入门教程**、**Python / Markdown / Git / MySQL / Linux** 五份入门教程，以及一份**用 ZCode（AI 编程代理）创建学习教程的方法手册**。
 
 ## 📚 Java 入门：从语法到完整项目
 
@@ -20,6 +20,10 @@
 ### 🗄️ 进阶：MySQL
 
 **[MySQL 入门：从 SQL 到 JDBC](docs/mysql/README.md)**（约 2.5 小时）—— Java 进阶路线第一站：SQL 建表与增删改查、`WHERE`/`ORDER BY`/`LIKE`/`AVG`、`JOIN` 多表关联、JDBC 五步走，并动手把学生管理系统从文件持久化迁移到数据库。
+
+### 💻 Linux 入门
+
+**[Linux 入门：与命令行做朋友](docs/linux/README.md)**（约 2 小时）—— 服务器世界的语言：导航、文件、搜索、权限、进程等高频命令，在 WSL 里亲手做一遍「命令行冒险」练习。
 
 ### 🤖 元技能：用 ZCode 创建教程
 
@@ -126,6 +130,7 @@ cs-campus/
 │   ├── python/          # Python 入门教程
 │   ├── markdown/        # Markdown 入门教程
 │   ├── mysql/           # MySQL 入门教程（SQL + JDBC）
+│   ├── linux/           # Linux 入门教程（命令行）
 │   └── zcode/           # 用 ZCode 创建教程的方法手册
 ├── AGENTS.md            # AI 协作规范（给编码代理的仓库约定）
 └── README.md
